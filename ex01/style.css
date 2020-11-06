@@ -6,6 +6,9 @@ header{
     color: white;
     text-align: center;
 }
+#foto{
+    border-radius: 50%;
+}
 section{
     background: white;
     color: rgb(231, 12, 12);
