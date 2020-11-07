@@ -7,7 +7,7 @@ header{
     text-align: center;
 }
 section{
-    background: rgb(221, 5, 5);
+    background: hsl(0, 18%, 97%);
     color: rgb(231, 12, 12);
     border-radius: 12px;
     padding: 15px;
@@ -18,7 +18,7 @@ section{
 img{
     border-radius: 50%;
 }
-}
+
 footer{
     color: white;
     text-align: center;
