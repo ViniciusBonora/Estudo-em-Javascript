@@ -1,11 +1,18 @@
 function tabuada(){
     let numb = document.getElementById('txtn')
-    let num = Number(numb.value)
-    let res = document.getElementById('res')
-    //res.innerHTML = `${num}`
+    let tab = document.getElementById('seltab')
+    //res.innerHTML = `${numb}`
     
-    for(let c = 0; c <= 10 ; c ++){
-        r = num * c
-        res.innerHTML += `${c} x ${num} = ${r}`
+    if(numb.value.length == 0){
+        window.alert('Favor digitar um numero')
+    } else {
+        let num = Number(numb.value)
+        for(let c = 0; c <= 10 ; c ++){
+        let item = document.createElement('option')
+        item.text = `${c} x ${num} = ${c*num}`
+        item.value = `tab${c}`
+        tab.appendChild(item)   
+        }
     }
+    
 }
