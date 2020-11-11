@@ -4,16 +4,18 @@ function verificar(vel){
     if(velkm.value.length == 0){
         window.alert('[ERRO] Preencha os dados')
     } else {
+        const velmax = 70;
+        const ptsporkm = 5;
         let velk = Number(velkm.value)
-        let vel = Math.floor(velk)
+        //let vel = Math.floor(velk)
         //res.innerHTML += `${vel}`
-        if(vel <= 70){
+        if(velk <= velmax){
             return res.innerHTML = `Velocidade Ok`
         } else {
-            let pts = (velk - 70) / 5 
-            let p = Math.floor(pts)
-            if(p < 12){
-                return res.innerHTML = `Multado ${p} pontos na carteira`
+            const pts = Math.floor(((velk - velmax) / ptsporkm)) 
+            //let p = Math.floor(pts)
+            if(pts < 12){
+                return res.innerHTML = `Multado ${pts} pontos na carteira`
             }else{
                 return res.innerHTML = `Carteira Suspensa`   
             }
