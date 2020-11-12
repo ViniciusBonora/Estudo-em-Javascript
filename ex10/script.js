@@ -5,6 +5,16 @@ function verificar(n){
         window.alert('Preencha todos os campos')
     } else {
         let n = Number(num.value)
-        res.innerHTML = `${n}`
+        //res.innerHTML = `${n}`
+        for(let cont = 0 ; cont <= n; cont++){
+            if(cont % 2 == 0){
+                res.innerHTML += `<br>${cont} Par`
+            } else {
+                res.innerHTML += `<br>${cont} Impar`
+            }
+        
+        }
+        
     }
+    
 }
