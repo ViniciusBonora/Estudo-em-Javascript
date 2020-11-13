@@ -13,12 +13,17 @@ function validar(){
             a: filme.ano.value,
             p: filme.pers.value
         };
+        /* jeito que deveria funcionar mas ele não reconhece number, so strings
+        for(prop in fil)
+            if(typeof fil[prop] == 'string')
+            res.innerHTML += `${prop}: ${fil[prop]}`
+        */
         let f = {
             tn: Number(filme.titulo.value),
             an: Number(filme.ano.value),
             pn: Number(filme.pers.value)
         };
-        //fn = Object.values(f)
+        //fn = Object.values(f) mostra todos os values do objetc 
         //res.innerHTML = `${fn}`
         if(fil.t != f.tn){
             res.innerHTML = `<p>Titulo: ${fil.t}</p>`
