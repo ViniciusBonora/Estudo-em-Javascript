@@ -1,13 +1,33 @@
-//let res = document.getElementById('res')
-const filme = {
-    Titulo: 'Vingadores',
-    Ano: 2020 ,
-    Personagem: 'Hulk'
-};
-exibirvalidar(filme);
-function exibirvalidar(obj){
-    for(prop in obj)
-        if(typeof prop === 'string')
-           console.log (prop,obj[prop]) 
+function validar(){
+    let res = document.getElementById('res')
+    let filme = {
+        titulo: document.getElementById('txt1'),
+        ano: document.getElementById('txt2'),
+        pers: document.getElementById('txt3')
+    };
+    if(filme.titulo.value.length == 0 || filme.ano.value.length == 0 || filme.pers.value.length == 0){
+        window.alert('Preencha todos os campos')
+    }else{
+        let fil = {
+            t: filme.titulo.value,
+            a: filme.ano.value,
+            p: filme.pers.value
+        };
+        let f = {
+            tn: Number(filme.titulo.value),
+            an: Number(filme.ano.value),
+            pn: Number(filme.pers.value)
+        };
+        //fn = Object.values(f)
+        //res.innerHTML = `${fn}`
+        if(fil.t != f.tn){
+            res.innerHTML = `<p>Titulo: ${fil.t}</p>`
+        }if(fil.a != f.an){
+            res.innerHTML += `<p>Ano: ${fil.a}</p>`
+        }if(fil.p != f.pn){
+            res.innerHTML += `<p>Personagem: ${fil.p}</p>`
+        }
+    }  
 }
+
 
