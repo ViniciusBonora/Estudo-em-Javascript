@@ -1,0 +1,5 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C04PIIKBPACLEGEB2V90").setAdvancedMatchingAvailableProperties({"email":false,"phone_number":false});
+window[window["TiktokAnalyticsObject"]].instance("C04PIIKBPACLEGEB2V90").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C04PIIKBPACLEGEB2V90").setPixelInfo({status: 0, name: "Dafiti_TikTok", advertiserID: "6915119478283960321", setupMode: 1, partner: "", is_onsite: false});
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("dafiti.com.br");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig([]);
